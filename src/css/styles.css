@@ -5,21 +5,41 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+@import url('./render-functions.css');
+ 
+.form-inline {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.form-control {
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  padding: 0 0 0 16px;
+}
+.form-control:hover {
+  border: 1px solid #000;
+}
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  color: #FFFFFF;
+  background: #4e75ff;
+  border: none;
+}
+.btn:hover {
+  background: #6c8cff;
 }
