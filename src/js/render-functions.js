@@ -1,5 +1,5 @@
 
-function createMarkup(arr) {
+export function createMarkup(arr) {
   return arr
     .map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `
     <li class="gallery-item">
@@ -21,5 +21,3 @@ function createMarkup(arr) {
     </li>
     `).join("");
 }
-
-export { createMarkup };
