@@ -14,7 +14,6 @@ export function getInform(str = "") {
     });
     return fetch(`${BASE_URL}?${parameters}`)
         .then(response => {
-            console.log(response);
             if (!response.ok) {
                 throw new Error(response.statusText);
             }
